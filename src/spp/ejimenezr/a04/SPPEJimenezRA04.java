@@ -22,6 +22,7 @@ public class SPPEJimenezRA04 {
         
         //Desplegamos menu
         //Solicitamos operacion a realizar
+        System.out.println("Bienvenido a la calculadora inteligente");
         System.out.println("1. Calcular tangente del ángulo");
         System.out.println("2. Calcular seno del ángulo");
         System.out.println("3. Calcular coseno del ángulo");
@@ -51,7 +52,7 @@ public class SPPEJimenezRA04 {
     static double mensajePedirDatos() {
         double angulo;
         Scanner kb= new Scanner (System.in);
-        System.out.println("Introduce el ángulo deseado");
+        System.out.println("Introduce el ángulo deseado entre 0 y 360");
         angulo=kb.nextDouble();
         angulo=Math.toRadians(angulo);
         return angulo;
